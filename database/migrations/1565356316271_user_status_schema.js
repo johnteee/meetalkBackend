@@ -13,6 +13,7 @@ class UserStatusSchema extends Schema {
 
       table.specificType('coordinates', 'geometry(point, 4326)');
       table.string('status');
+      table.string('user_id').unique();
     })
   }
 
